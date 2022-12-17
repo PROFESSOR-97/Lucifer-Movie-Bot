@@ -20,7 +20,7 @@ Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
 
     SOURCE_TXT = """<b>Source:</b>
 Lucifer is a Open source project.
-Source: <a href='https://github.com/MrProfessor-99/LuciferMoringStar-RoboT'>GitHub - Click here 👈</a>
+Source: <a href='https://github.com/PROFESSOR-97/Lucifer-Movie-Bot'>GitHub - Click here 👈</a>
 
 <b>DEVS:</b>
 - <a href='https://t.me/TechMasterz'>Tech Masterz</a>
@@ -278,7 +278,7 @@ Some URLs is Shortner
 • /short <code>(link)</code> - I will send the shorted links.
 
 <b>Example:</b>
-<code>/short https://t.me/josprojects</code>
+<code>/short https://t.me/TechMasterz</code>
 
 <b>NOTE:</b>
 • Lucifer should have admin privillage.
