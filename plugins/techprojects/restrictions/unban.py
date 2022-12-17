@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
-from plugins.josprojects.help_func.admin_check import admin_check
-from plugins.josprojects.help_func.extract_user import extract_user
+from plugins.techprojects.help_func.admin_check import admin_check
+from plugins.techprojects.help_func.extract_user import extract_user
 
 
 @Client.on_message(filters.command(["unban", "unmute"]))
