@@ -52,7 +52,7 @@
 
 ## Deploy to Koyeb
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/PROFESSOR-97/Lucifer-Movie-Bot&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[CHANNELS]&env[ADMINS]&env[PICS]&env[LOG_CHANNEL]&env[AUTH_CHANNEL]&env[AUTH_USERS]&env[DATABASE_URI]&env[DATABASE_NAME]&env[COLLECTION_NAME]=Telegram_files&run_command=python%20bot.py&branch=main&name=mr-rofessor)              
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/PROFESSOR-97/Lucifer-Movie-Bot&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[CHANNELS]&env[ADMINS]&env[PICS]&env[LOG_CHANNEL]&env[AUTH_CHANNEL]&env[AUTH_USERS]&env[DATABASE_URI]&env[DATABASE_NAME]&env[COLLECTION_NAME]=Telegram_files&run_command=python3%20bot.py&branch=main&name=mr-rofessor)              
 
 ## Deploy to Railway
 
@@ -96,7 +96,7 @@
 * [![Tech Masterz](https://img.shields.io/static/v1?label=Tech&message=Masterz&color=critical)](https://t.me/TechMasterz)
 
 ## Disclaimer
-[![GNU Affero General Public License 3.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
-Licensed under [GNU AGPL 3.0](https://github.com/PROFESSOR-97/Lucifer-Movie-Bot/blob/master/LICENSE)
+[![GNU General Public License v3.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
+Licensed under [GNU AGPL v3.0](https://github.com/PROFESSOR-97/Lucifer-Movie-Bot/blob/master/LICENSE)
 Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
