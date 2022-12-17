@@ -264,8 +264,8 @@ async def delallconfirm(client, message):
         await message.reply_text(
             f"This will delete all filters from '{title}'.\nDo you want to continue??",
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(text="Yes",callback_data="delallconfirm")],
-                [InlineKeyboardButton(text="Cancel",callback_data="delallcancel")]
+                [InlineKeyboardButton(text="✓ Yes",callback_data="delallconfirm")],
+                [InlineKeyboardButton(text="× No ×",callback_data="delallcancel")]
             ]),
             quote=True
         )
