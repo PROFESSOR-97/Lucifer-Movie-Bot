@@ -46,9 +46,9 @@
 * `IMDB` : Imdb, the view of information when making True/False
 * `SINGLE_BUTTON` : choose b/w single or double buttons 
 * `P_TTI_SHOW_OFF` : Customize Result Buttons to Callback or Url by (True = url / False = callback)
-* Check info.py for more
+* Check info.py for more variables
  
-### Deploy
+### Deployment Support Site
 
 ## Deploy to Koyeb
 
@@ -96,7 +96,7 @@
 * [![Tech Masterz](https://img.shields.io/static/v1?label=Tech&message=Masterz&color=critical)](https://t.me/TechMasterz)
 
 ## Disclaimer
-[![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
-Licensed under [GNU AGPL 2.0](https://github.com/EvamariaTG/evamaria/blob/master/LICENSE)
+[![GNU Affero General Public License 3.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
+Licensed under [GNU AGPL 3.0](https://github.com/PROFESSOR-97/Lucifer-Movie-Bot/blob/master/LICENSE)
 Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
