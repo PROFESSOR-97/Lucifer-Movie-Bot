@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (C) @ZauteKm
+# Copyright (C) @PROFESSOR-97
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -15,7 +15,7 @@
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from plugins.josprojects.help_func.cust_p_filters import (
+from plugins.techprojects.help_func.cust_p_filters import (
     admin_fliter
 )
 
