@@ -89,7 +89,11 @@
 
 ## Telegram Support Chat
 
-* [![Tech Masterz](https://img.shields.io/static/v1?label=Tech&message=Masterz&color=critical)](https://t.me/TechMasterz)
+* [![Tech Masterz](https://img.shields.io/static/v1?label=Tech&message=Masterz&color=critical)](https://t.me/TechMasterzChat)
+
+## Telegram Updates Channel 
+
+* [![Tech Masterz Updates](https://img.shields.io/static/v1?label=Tech&message=Masterz&color=critical)](https://t.me/TechMasterz)
 
 ## Disclaimer
 [![GNU General Public License v3.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
