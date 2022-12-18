@@ -89,7 +89,7 @@
 
 ## Telegram Support Chat
 
-* [![Tech Masterz](https://img.shields.io/static/v1?label=Tech&message=Masterz&color=critical)](https://t.me/TechMasterzChat)
+* [![Tech Masterz Chat](https://img.shields.io/static/v1?label=Tech&message=Masterz&message=Chat&color=critical)](https://t.me/TechMasterzChat)
 
 ## Telegram Updates Channel 
 
