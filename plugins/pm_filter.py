@@ -1048,14 +1048,11 @@ async def advantage_spell_chok(msg):
     if not movielist:
         button = InlineKeyboardMarkup(
         [[
-           InlineKeyboardButton("♻️ HELP ♻️", callback_data="mrhelp")
+           InlineKeyboardButton("✅ Google ✅", url=f"https://www.google.com/search?q={search}")
         ],
         [
-           InlineKeyboardButton("🔍 GOOGLE", url=f"https://www.google.com/search?q={search}"),
-           InlineKeyboardButton("IMDB 🔎", url=f"https://www.imdb.com/find?q={search}")
-        ],
-        ]
-           InlineKeyboardButton("🗑 CLOSE 🗑", callback_data="close_data")
+           InlineKeyboardButton("⭕️ IMDb", url=f"https://www.imdb.com/find?q={search}"),
+           InlineKeyboardButton("Wikipedia ⭕️", url=f"https://en.m.wikipedia.org/w/index.php?search={search}")
         ]])
         k = await msg.reply(f"Hello 👋, Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n\n<s>Please Go to Google Or IMDb and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=button)
         await asyncio.sleep(60)
