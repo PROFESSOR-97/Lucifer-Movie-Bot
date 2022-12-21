@@ -46,15 +46,14 @@ async def next_page(bot, query):
         pass
     elif int(req) not in [query.from_user.id, 0]:
         return await query.answer(
-            "All right, but this is not yours 🤗\nNice Try! But, This Was Not Your Request, Request Yourself",
-            show_alert=True)
+            "All Right, But This Is Not Yours 🤗\n\nRequest Yourself ✍️", show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
+        await query.answer("You are using my old messages, please request again 🙏", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -105,7 +104,7 @@ async def next_page(bot, query):
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text=f"Check PM!", url=f"https://t.me/{temp.U_NAME}"),
+             InlineKeyboardButton(text=f"Check PM", url=f"https://t.me/{temp.U_NAME}"),
              InlineKeyboardButton("Next ➡", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
@@ -121,7 +120,7 @@ async def next_page(bot, query):
             ])
 
     btn.insert(0, [
-        InlineKeyboardButton("🤖 Check Bot PM First 🤖", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("📣 Join Our Channel 📣", url="https://t.me/+A-prWS31cW9iZDU1")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -138,7 +137,7 @@ async def advantage_spoll_choker(bot, query):
     if int(ad_user) in ADMINS:
         pass
     elif int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("okDa", show_alert=True)
+        return await query.answer("Ok Da", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
@@ -360,8 +359,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             pass
         elif int(user) != 0 and query.from_user.id != int(user):
             return await query.answer(
-                "All right, but this is not yours 🤗\nNice Try! But, This Was Not Your Request, Request Yourself.",
-                show_alert=True)
+                "All Right, But This Is Not Yours 🤗\n\nRequest Yourself ✍️", show_alert=True)
 
         if not files_:
             return await query.answer('No such file exist.')
@@ -405,7 +403,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(buttons),
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('Check Bot PM, I have sent files in pm', show_alert=False)
+                await query.answer('Check My PM, I Have Sent Your Files In PM 📩', show_alert=False)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
@@ -1050,13 +1048,16 @@ async def advantage_spell_chok(msg):
     if not movielist:
         button = InlineKeyboardMarkup(
         [[
-           InlineKeyboardButton("🔍 Google 🔎", url=f"https://www.google.com/search?q={search}")
+           InlineKeyboardButton("♻️ HELP ♻️", callback_data="mrhelp")
         ],
         [
-           InlineKeyboardButton("🔍 IMDb", url=f"https://www.imdb.com/find?q={search}"),
-           InlineKeyboardButton("Wikipedia 🔎", url=f"https://en.m.wikipedia.org/w/index.php?search={search}")
+           InlineKeyboardButton("🔍 GOOGLE", url=f"https://www.google.com/search?q={search}"),
+           InlineKeyboardButton("IMDB 🔎", url=f"https://www.imdb.com/find?q={search}")
+        ],
+        ]
+           InlineKeyboardButton("🗑 CLOSE 🗑", callback_data="close_data")
         ]])
-        k = await msg.reply(f"Hey, Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n\n<s>Please Go to Google and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=button)
+        k = await msg.reply(f"Hello 👋, Your word <b>{search}</b> is No Movie/Series Related to the Given Word Was Found 🥺\n\n<s>Please Go to Google Or IMDb and Confirm the Correct Spelling 🥺🙏</s>", reply_markup=button)
         await asyncio.sleep(60)
         await k.delete()
         return
@@ -1068,7 +1069,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    m = await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
+    m = await msg.reply("I couldn't find anything related to that\nDid you mean any one of these ?",
                     reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(20)
     await m.delete()
