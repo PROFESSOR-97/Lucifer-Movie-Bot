@@ -13,7 +13,7 @@ aiofiles
 requests
 pyshorteners
 bs4
-imdbpy==2022.7.9
+git+https://github.com/Joelkb/cinemagoer
 youtube-search-python==1.4.6
 youtube_search
 youtube-dl
