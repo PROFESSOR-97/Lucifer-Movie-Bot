@@ -1,9 +1,15 @@
 class Script(object):
-    START_TXT = """<b><i>Hello 👋 {},\nIt's Power Full <a href=https://t.me/{}>{}</a> Here 😎\nAdd Me To Your Group And Make Sure I'm An Admin There.....!!! \nAnd Enjoy My Pever Show.....!!!🤪</b></i>""""""
+    START_TXT = """<b><i>Hello 👋 {},
+
+It's Power Full <a href=https://t.me/{}>{}</a> Here 😎
+
+Add Me To Your Group And Make Sure I'm An Admin There And Enjoy My Pever Show....!!!🤪
+
+Click ℹ️ Help for more information</b></i>"""
 
     HELP_TXT = """<b><i>Hello 👋 {},
 
-I Can Guide You Through All Of <a href=https://t.me/{}>{}'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules</b></i>"""
+I Can Guide You Through All Of <a href=https://t.me/{}>{} Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules</b></i>"""
 
     SOURCE_TXT = """<b>Source:</b>
 Lucifer is a Open source project.
