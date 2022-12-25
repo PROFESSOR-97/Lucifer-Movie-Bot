@@ -501,7 +501,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('Zombies', callback_data='zombies'),
             InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('× Close ×', callback_data='close_data'),
+            InlineKeyboardButton('Source', callback_data='source'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -509,23 +509,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "about":
-        buttons = [[
-            InlineKeyboardButton('📊 Status', url='https://t.me/TechMasterz'),
-            InlineKeyboardButton('Source 🪤', callback_data='source')
-            ],[
-            InlineKeyboardButton('❓ How to Use ❓', callback_data='help')
-            ],[
-            InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('Close ✗', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=Script.ABOUT_TXT.format(temp.B_NAME),
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
+    elif "about" in query.data:
+        return await query.answer("""
+꧁֍LUCIFER MOVIE BOT֍꧂
+
+ツ Creator : PROFESSOR-97
+❖ Language : Python3
+❖ Hosted : VPS
+❖ Version : 2.0.1 [BETA]
+❖ Farmework : Pyrogram
+❖ Database : MongoDB
+֎ Bot : Indian 🇮🇳
+""", show_alert=True)
     elif query.data == "torrent":
         buttons = [[
             InlineKeyboardButton('« Back', callback_data='help'),
