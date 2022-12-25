@@ -505,7 +505,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=Script.HELP_TXT.format(query.from_user.mention),
+            text=Script.HELP_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -513,7 +513,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         return await query.answer("""
 ꧁֍LUCIFER MOVIE BOT֍꧂
 
-ツ Creator : PROFESSOR-97
+ツ Creator : Professor-97
 ❖ Language : Python3
 ❖ Hosted : VPS
 ❖ Version : 2.0.1 [BETA]
