@@ -1,22 +1,9 @@
 class Script(object):
-    START_TXT = """Hello 👋 {},
+    START_TXT = """<b><i>Hello 👋 {},\nIt's Power Full <a href=https://t.me/{}>{}</a> Here 😎\nAdd Me To Your Group And Make Sure I'm An Admin There.....!!! \nAnd Enjoy My Pever Show.....!!!🤪</b></i>""""""
 
-My name is <a href=https://t.me/{}>{}</a>!
+    HELP_TXT = """<b><i>Hello 👋 {},
 
-<b>I can provide Movies. A Telegram Auto Filter Bot. Its Easy To Use Me :)
-
-Just Add me to Your Group As Admin, Hit The Help Button For More Info..</b>"""
-
-    HELP_TXT = """Hey 👋 {},
-
-<b>Here Is The Help For My Commands.</b>"""
-
-    ABOUT_TXT = """<b>➥ My name: {}
-➥ Creator: <a href='https://t.me/helloprofessor97'>Professor 97</a>
-➥ Library: <a href='https://docs.pyrogram.org/'>Pyrogram</a>
-➥ Language: Python 𝟹
-➥ Data Base: <a href='https://www.mongodb.com/'>MongoDB</a>
-➥ Build Status: v2.0.1 [ Beta ]"""
+I Can Guide You Through All Of <a href=https://t.me/{}>{}'s Cool Features & How To Properly Use Them. Use The Buttons Below To Navigate Through All Of The Modules</b></i>"""
 
     SOURCE_TXT = """<b>Source:</b>
 Lucifer is a Open source project.
