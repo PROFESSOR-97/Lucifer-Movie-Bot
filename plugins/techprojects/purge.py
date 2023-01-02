@@ -1,26 +1,13 @@
-"""Purge Messages
-Syntax: .purge"""
-
 import asyncio
-from pyrogram import Client, filters
+from pyrogram import Client, filters, enums 
+from plugins.techprojects.admin_check import admin_check
 
-from plugins.techprojects.help_func.admin_check import admin_check
-from plugins.techprojects.help_func.cust_p_filters import f_onw_fliter
 
-TG_MAX_SELECT_LEN = 100
-
-@Client.on_message(
-    filters.command("purge") &
-    f_onw_fliter
-)
+@Client.on_message(filters.command("purge") & (filters.group | filters.channel))                   
 async def purge(client, message):
-    """ purge upto the replied message """
-    if message.chat.type not in (("supergroup", "channel")):
-        # https://t.me/c/1312712379/84174
+    if message.chat.type not in ((enums.ChatType.SUPERGROUP, enums.ChatType.CHANNEL)):
         return
-
     is_admin = await admin_check(message)
-
     if not is_admin:
         return
 
@@ -30,12 +17,9 @@ async def purge(client, message):
     count_del_etion_s = 0
 
     if message.reply_to_message:
-        for a_s_message_id in range(
-            message.reply_to_message.message_id,
-            message.message_id
-        ):
+        for a_s_message_id in range(message.reply_to_message.id, message.id):
             message_ids.append(a_s_message_id)
-            if len(message_ids) == TG_MAX_SELECT_LEN:
+            if len(message_ids) == "100":
                 await client.delete_messages(
                     chat_id=message.chat.id,
                     message_ids=message_ids,
@@ -50,9 +34,6 @@ async def purge(client, message):
                 revoke=True
             )
             count_del_etion_s += len(message_ids)
-
-    await status_message.edit_text(
-        f"deleted {count_del_etion_s} messages"
-    )
+    await status_message.edit_text(f"deleted {count_del_etion_s} messages")
     await asyncio.sleep(5)
     await status_message.delete()
