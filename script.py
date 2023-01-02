@@ -394,3 +394,5 @@ Name - {}"""
 ᴇxᴀᴍᴘʟᴇ : Loki S01E01
 
 🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)"""
+
+    ALRT_TXT = """Hello {} This Is Not Your Message 🤗\n\nRequest Your Own ✍️\n\n©️ TECH MASTERZ"""
