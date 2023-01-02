@@ -1,6 +1,6 @@
 import asyncio
 from pyrogram import Client, filters, enums 
-from plugins.techprojects.admin_check import admin_check
+from plugins.techprojects.help_func import admin_check
 
 
 @Client.on_message(filters.command("purge") & (filters.group | filters.channel))                   
